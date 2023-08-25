@@ -3,18 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--
-       |==================================
-       |  Title
-       |==================================
-    -->
-    <title>Main page</title>
 
-    <!--
-       |==================================
-       |  Fonts
-       |==================================
-    -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -23,12 +13,7 @@
       rel="stylesheet"
     />
 
-    <!--
-       |==================================
-       |  Normolaize
-       |==================================
-    -->
-
+    <!-- Normolaize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -37,24 +22,21 @@
       referrerpolicy="no-referrer"
     />
 
-    <!--
-       |==================================
-       |  Own stylesheet
-       |==================================
-    -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Title -->
+    <title>Main page</title>
   </head>
   <body>
     <!-- ==== header ==== -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="header-container container">
-        <!-- ==== header-nav ==== -->
         <nav class="header-nav">
-          <!-- ==== logo ==== -->
           <a href="./index.html" class="header-logo-link logo link">
             Web<span class="logo-dark">Studio</span>
           </a>
-          <!-- ==== nav ==== -->
+
           <ul class="header-nav-list list">
             <li class="header-nav-item">
               <a href="./index.html" class="header-nav-link current link"
@@ -71,7 +53,7 @@
             </li>
           </ul>
         </nav>
-        <!-- ==== header-address ==== -->
+
         <address class="header-address">
           <ul class="header-address-list list">
             <li class="header-address-item">
@@ -89,25 +71,32 @@
             </li>
           </ul>
         </address>
+
+        <button class="header-mobile-menu" js-menu-open>
+          <svg class="icon" width="32" height="24">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header>
+    </header> -->
 
     <!-- ==== main ==== -->
     <main class="main">
       <!-- ==== heroe ==== -->
-      <section class="heroe">
+      <!-- <section class="heroe">
         <div class="container">
           <h1 class="heroe-title">Effective Solutions for Your Business</h1>
           <button type="button" class="heroe-btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
+
       <!-- ==== themes ==== -->
-      <section class="themes">
+      <!-- <section class="themes">
         <div class="container">
           <h2 class="visually-hidden">Themes</h2>
-          <ul class="cards list">
+          <ul class="themes-list cards list">
             <li class="themes-card">
               <div class="themes-card-icon-wrapper">
                 <svg class="themes-card-icon" width="64" height="64">
@@ -158,12 +147,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+
       <!-- ==== doing ==== -->
-      <section class="doing">
+      <!-- <section class="doing">
         <div class="container">
           <h2 class="doing-title">What are we doing</h2>
-          <ul class="cards list">
+          <ul class="doing-list cards list">
             <li class="doing-card">
               <img
                 src="./images/frame1.jpg"
@@ -190,12 +180,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+
       <!-- ==== our-team ==== -->
-      <section class="our-team">
+      <!-- <section class="our-team">
         <div class="container">
           <h2 class="our-team-title">Our Team</h2>
-          <ul class="cards list">
+          <ul class="our-team-list cards list">
             <li class="our-team-card">
               <img
                 src="./images/mark_guerrero.jpg"
@@ -478,7 +469,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+
+      <!-- customers -->
       <section class="customers">
         <div class="customers-container container">
           <h2 class="customers-header">Customers</h2>
@@ -531,8 +524,8 @@
     </main>
 
     <!-- ==== footer ==== -->
-    <footer class="footer">
-      <div class="footer-container container">
+    <!-- <footer class="footer">
+      <div class="footer-container cards container">
         <div class="footer-main">
           <a href="./index.html" class="footer-logo-link logo link">
             Web<span class="logo-light">Studio</span>
@@ -546,7 +539,7 @@
           <p class="footer-social-media-header">Social media</p>
           <ul class="footer-social-media-list list">
             <li class="fotter-social-media-item">
-              <!-- instagram -->
+
               <a
                 href="https://www.instagram.com/"
                 class="footer-media-social-link link"
@@ -557,7 +550,6 @@
               </a>
             </li>
             <li class="fotter-social-media-item">
-              <!-- twitter -->
               <a
                 href="https://twitter.com/"
                 class="footer-media-social-link link"
@@ -568,7 +560,6 @@
               </a>
             </li>
             <li class="fotter-social-media-item">
-              <!-- facebook -->
               <a
                 href="https://www.facebook.com/"
                 class="footer-media-social-link link"
@@ -579,7 +570,6 @@
               </a>
             </li>
             <li class="fotter-social-media-item">
-              <!-- linkedin -->
               <a
                 href="https://ua.linkedin.com/"
                 class="footer-media-social-link link"
@@ -611,31 +601,28 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <!-- Modal button close -->
+ 
         <button class="modal-btn-close" type="button" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#modal-close"></use>
           </svg>
         </button>
 
-        <!-- Modal header -->
         <p class="modal-header">
           Leave your contacts and we will call you back
         </p>
 
-        <!-- Modal form  -->
         <form
           class="modal-form"
           name="order-service"
           novalidate
           autocomplete="on"
         >
-          <!-- modal input name -->
           <div class="modal-form-box">
             <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-form-input-wrapper">
@@ -652,7 +639,6 @@
             </div>
           </div>
 
-          <!-- modal input phone -->
           <div class="modal-form-box">
             <label class="modal-form-label" for="modal-phone">Phone</label>
             <div class="modal-form-input-wrapper">
@@ -669,7 +655,6 @@
             </div>
           </div>
 
-          <!-- modal input email -->
           <div class="modal-form-box">
             <label class="modal-form-label" for="modal-email">Email</label>
             <div class="modal-form-input-wrapper">
@@ -686,7 +671,6 @@
             </div>
           </div>
 
-          <!-- modal textarea comment -->
           <div class="comment-box">
             <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
@@ -698,7 +682,6 @@
             ></textarea>
           </div>
 
-          <!-- modal chekbox  privacy-->
           <div class="checkbox-wrapper">
             <input
               class="visually-hidden"
@@ -725,12 +708,43 @@
               </a>
             </label>
           </div>
-          <!-- modal form button -->
           <button class="modal-btn-send" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <!-- mobile menu -->
+    <!-- <div class="mobile-menu">
+      <button class="mobile-menu-btn-close" type="button">
+        <svg class="icon" width="8" height="8">
+          <use href="./images/icons.svg#modal-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item"><a href="">Studio</a></li>
+        <li class="mobile-menu-item"><a href="">Portfolio</a></li>
+        <li class="mobile-menu-item"><a href="">Contacts</a></li>
+      </ul>
+      <address class="header-address">
+          <ul class="header-address-list list">
+            <li class="header-address-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header-address-link link"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header-address-item">
+              <a href="tel:+110001111111" class="header-address-link link">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+        </address>
+    </div> -->
+
+    <!-- <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script> -->
   </body>
 </html>
