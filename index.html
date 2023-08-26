@@ -30,7 +30,7 @@
   </head>
   <body>
     <!-- ==== header ==== -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container">
         <nav class="header-nav">
           <a href="./index.html" class="header-logo-link logo link">
@@ -78,22 +78,22 @@
           </svg>
         </button>
       </div>
-    </header> -->
+    </header>
 
     <!-- ==== main ==== -->
     <main class="main">
       <!-- ==== heroe ==== -->
-      <!-- <section class="heroe">
+      <section class="heroe">
         <div class="container">
           <h1 class="heroe-title">Effective Solutions for Your Business</h1>
           <button type="button" class="heroe-btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- ==== themes ==== -->
-      <!-- <section class="themes">
+      <section class="themes">
         <div class="container">
           <h2 class="visually-hidden">Themes</h2>
           <ul class="themes-list cards list">
@@ -147,53 +147,95 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- ==== doing ==== -->
-      <!-- <section class="doing">
+      <section class="doing">
         <div class="container">
           <h2 class="doing-title">What are we doing</h2>
           <ul class="doing-list cards list">
             <li class="doing-card">
               <img
-                src="./images/frame1.jpg"
+                srcset="
+                  ./images/wawd/doing-desc-1@1x.jpg 1x,
+                  ./images/wawd/doing-desc-1@2x.jpg 2x
+                "
+                src="./images/wawd/doing-desc-1@1x.jpg"
                 alt="desktop"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="doing-card">
               <img
-                src="./images/frame2.jpg"
+                srcset="
+                  ./images/wawd/doing-desc-2@1x.jpg 1x,
+                  ./images/wawd/doing-desc-2@2x.jpg 2x
+                "
+                src="./images/wawd/doing-desc-2@1x.jpg"
                 alt="mobile-app"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="doing-card">
               <img
-                src="./images/frame3.jpg"
+                srcset="
+                  ./images/wawd/doing-desc-3@1x.jpg 1x,
+                  ./images/wawd/doing-desc-3@2x.jpg 2x
+                "
+                src="./images/wawd/doing-desc-3@1x.jpg"
                 alt="phone"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- ==== our-team ==== -->
-      <!-- <section class="our-team">
+      <section class="our-team">
         <div class="container">
           <h2 class="our-team-title">Our Team</h2>
           <ul class="our-team-list cards list">
             <li class="our-team-card">
-              <img
-                src="./images/mark_guerrero.jpg"
-                alt="Mark Guerrero"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/our-team/person-1-desc@1x.jpg 1x,
+                    ./images/our-team/person-1-desc@2x.jpg 2x
+                  "
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/our-team/person-1-tab@1x.jpg 1x,
+                    ./images/our-team/person-1-tab@2x.jpg 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767.98px)"
+                  srcset="
+                    ./images/our-team/person-1-mob@1x.jpg 1x,
+                    ./images/our-team/person-1-mob@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/our-team/person-1-desc@1x.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="our-team-card-content">
                 <h3 class="our-team-card-content-title">Mark Guerrero</h3>
                 <p class="our-team-card-content-text">Product Designer</p>
@@ -258,12 +300,38 @@
               </div>
             </li>
             <li class="our-team-card">
-              <img
-                src="./images/tom_ford.jpg"
-                alt="Tom Ford"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/our-team/person-2-desc@1x.jpg 1x,
+                    ./images/our-team/person-2-desc@2x.jpg 2x
+                  "
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/our-team/person-2-tab@1x.jpg 1x,
+                    ./images/our-team/person-2-tab@2x.jpg 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767.98px)"
+                  srcset="
+                    ./images/our-team/person-2-mob@1x.jpg 1x,
+                    ./images/our-team/person-2-mob@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/our-team/person-2-desc@1x.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="our-team-card-content">
                 <h3 class="our-team-card-content-title">Tom Ford</h3>
                 <p class="our-team-card-content-text">Frontend Developer</p>
@@ -328,12 +396,38 @@
               </div>
             </li>
             <li class="our-team-card">
-              <img
-                src="./images/camila_garcia.jpg"
-                alt="Camila Garcia"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/our-team/person-3-desc@1x.jpg 1x,
+                    ./images/our-team/person-3-desc@2x.jpg 2x
+                  "
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/our-team/person-3-tab@1x.jpg 1x,
+                    ./images/our-team/person-3-tab@2x.jpg 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767.98px)"
+                  srcset="
+                    ./images/our-team/person-3-mob@1x.jpg 1x,
+                    ./images/our-team/person-3-mob@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/our-team/person-3-desc@1x.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="our-team-card-content">
                 <h3 class="our-team-card-content-title">Camila Garcia</h3>
                 <p class="our-team-card-content-text">Marketing</p>
@@ -398,12 +492,38 @@
               </div>
             </li>
             <li class="our-team-card">
-              <img
-                src="./images/daniel_ilson.jpg"
-                alt="Daniel Wilson"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/our-team/person-4-desc@1x.jpg 1x,
+                    ./images/our-team/person-4-desc@2x.jpg 2x
+                  "
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/our-team/person-4-tab@1x.jpg 1x,
+                    ./images/our-team/person-4-tab@2x.jpg 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767.98px)"
+                  srcset="
+                    ./images/our-team/person-4-mob@1x.jpg 1x,
+                    ./images/our-team/person-4-mob@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/our-team/person-4-desc@1x.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="our-team-card-content">
                 <h3 class="our-team-card-content-title">Daniel Wilson</h3>
                 <p class="our-team-card-content-text">UI Designer</p>
@@ -469,7 +589,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- customers -->
       <section class="customers">
@@ -524,7 +644,7 @@
     </main>
 
     <!-- ==== footer ==== -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container cards container">
         <div class="footer-main">
           <a href="./index.html" class="footer-logo-link logo link">
@@ -539,7 +659,6 @@
           <p class="footer-social-media-header">Social media</p>
           <ul class="footer-social-media-list list">
             <li class="fotter-social-media-item">
-
               <a
                 href="https://www.instagram.com/"
                 class="footer-media-social-link link"
@@ -601,7 +720,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- modal window -->
     <!-- <div class="backdrop is-hidden" data-modal>
