@@ -1397,32 +1397,6 @@ input[type='checkbox']:checked + .modal-form-agrement .modal-form-check {
    |==================================
 */
 
-/* .burger-menu {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-} */
-
-/* @media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-} */
-
-/* .menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-} */
 
 .menu-container {
   position: fixed;
@@ -1485,6 +1459,8 @@ input[type='checkbox']:checked + .modal-form-agrement .modal-form-check {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+
+  transition: color var(--animation)
 }
 
 .mobile-menu-link:active {
